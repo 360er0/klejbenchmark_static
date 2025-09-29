@@ -1,0 +1,88 @@
+a {
+    color: #853700;
+}
+
+a:hover,
+a:active,
+a:focus {
+    color: #5d2600;
+}
+
+
+.navbar {
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+    min-height: 70px;
+    background-color: #ff5a00;
+    border: 0;
+    box-shadow: 0px 2px 4px -1px rgba(0,0,0,0.2), 0px 4px 5px 0px rgba(0,0,0,0.14), 0px 1px 10px 0px rgba(0,0,0,0.12);
+}
+
+.navbar-inverse .navbar-brand,
+.navbar-inverse .navbar-nav > li > a {
+    color: #fff;
+}
+
+.navbar-inverse .navbar-nav>.active>a,
+.navbar-inverse .navbar-nav>.active>a:hover,
+.navbar-inverse .navbar-header>button:hover,
+.navbar-inverse .navbar-nav>li>a:hover {
+    background-color: #df3a00;
+}
+
+.navbar-brand {
+    padding: 0 15px;
+    height: 70px;
+    line-height: 70px;
+    font-size: 30px;
+}
+
+.navbar-nav > li > a {
+    /* (70px - line-height of 27px) / 2 = 21.5px */
+    padding-top: 21.5px;
+    padding-bottom: 21.5px;
+    line-height: 27px;
+    font-size: 20px;
+}
+
+.navbar-toggle {
+    border: 0;
+    height: 40px;
+    margin: 15px 15px 15px 0px;
+}
+
+.navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form {
+    border-color: #df3a00;
+}
+
+.main-text {
+    padding-top: 0px;
+    padding-bottom: 200px;
+    font-size: medium;
+    background-color: #fefefe;
+}
+
+.center-text {
+    text-align: center;
+}
+
+.cite {
+    width: 100%;
+    font-family: monospace;
+    background-color: #eeeeee;
+    padding: 5px;
+}
+
+.cite-block {
+    margin-top: 20px;
+}
+
+.table-fixed {
+    table-layout: fixed;
+}
+
+.bold-border {
+    border-left: 2px solid #ddd;
+    border-right: 2px solid #ddd;
+}

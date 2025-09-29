@@ -1,0 +1,23 @@
+# GitHub Pages configuration for KLEJ Benchmark static site
+title: "KLEJ Benchmark"
+description: "Kompleksowa Lista Ewaluacji Językowych - A set of nine evaluation tasks for the Polish language understanding"
+url: ""
+baseurl: ""
+
+# Build settings
+plugins:
+  - jekyll-relative-links
+
+relative_links:
+  enabled: true
+  collections: false
+
+# Exclude files from the build
+exclude:
+  - README.md
+  - .gitignore
+
+# Include all files by default
+include:
+  - _pages
+  - static

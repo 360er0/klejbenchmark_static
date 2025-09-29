@@ -1,0 +1,164 @@
+
+<html lang="en-US">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    
+<title>KLEJ Benchmark - Submit</title>
+
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-153145589-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-153145589-1');
+    </script>
+
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+    <!-- Custom resources -->
+    <link rel="stylesheet" type="text/css" href="../static/style.css">
+    <link rel="icon" type="image/png" href="../static/icon.png" sizes="32x32">
+
+</head>
+
+<body>
+
+
+<nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="../"><span class="glyphicon glyphicon-tint"></span> KLEJ</a>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="https://arxiv.org/abs/2005.00630" target="_blank"><span class="glyphicon glyphicon-file"></span> Paper</a></li>
+                <li><a href="https://github.com/allegro/klejbenchmark-baselines" target="_blank"><span class="glyphicon glyphicon-tasks"></span> Code</a></li>
+                <li><a href="../tasks/"><span class="glyphicon glyphicon-duplicate"></span> Tasks</a></li>
+                <li><a href="../leaderboard/"><span class="glyphicon glyphicon-sort-by-attributes-alt"></span> Leaderboard</a></li>
+                <li><a href="./"><span class="glyphicon glyphicon-cloud-upload"></span> Submit</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+
+
+<div class="container">
+    <div class="row">
+        <div class="col-sm-2"></div>
+        <div class="col-sm-8">
+            <div class="main-text">
+                <h2>Submit</h2>
+                <hr>
+                <p>
+                    The submission should be a zip file containing prediction files for each tasks. Each prediction file
+                    should be named <em>test_pred_TASKNAME.tsv</em> and contain a single column of predictions with a
+                    header. The order of predictions must match the rows from a test file.
+                </p>
+
+                <p>
+                    You can download a sample submission file below:
+                </p>
+
+                <a href="../static/data/sample_submission.zip" target="_blank"><button type="button" class="btn btn-default btn-md">
+                    <span class="glyphicon glyphicon-download" aria-hidden="true"></span> Sample Submission
+                </button></a>
+
+                <hr>
+
+                <p>
+                    Please provide:
+                </p>
+                <ul>
+                    <li>
+                        Name of the submitted model and the link to more information about the model
+                        (e.g. paper, github repo, huggingface.co/models page).
+                    </li>
+                    <li>
+                        Descriptive name of the fine-tuning method and the link to code or
+                        description on how the model was fine-tuned on KLEJ tasks.
+                    </li>
+                </ul>
+
+                <p>
+                    After uploading the prediction you will see the results of your model and you will be able to publish
+                    them on the leaderboard.
+                </p>
+
+                <p>
+                    Note that the evaluation is limited to 5 submissions per day.
+                </p>
+
+                <hr>
+
+                <form id="file1" action="" method="POST" enctype="multipart/form-data">
+                    <input type="hidden" name="csrfmiddlewaretoken" value="N4OZnNYBFYpwyTpeAtVzCl8dUfEhdEcQWeVbRBPCTmrVHb74a9PTtUne4YbTrnnj">
+                    <div class="form-group">
+                        <label for="model">Model name [required]:</label>
+                        <input id="model" name="model" type="text" class="form-control" maxlength="128" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="model_url">Model URL [required]:</label>
+                        <input id="model_url" name="model_url" type="text" class="form-control" maxlength="256" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="finetuning">Fine-tuning method name [optional]:</label>
+                        <input id="finetuning" name="finetuning" type="text" class="form-control" maxlength="128">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="finetuning_url">Fine-tuning method URL [optional]:</label>
+                        <input id="finetuning_url" name="finetuning_url" type="text" class="form-control" maxlength="256">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="file">Zip file [required]:</label>
+                        <input id="file" type="file" name="file" required>
+                    </div>
+
+                    <hr>
+                    <button class="btn btn-block btn-default" type="submit" disabled>Evaluate</button>
+                </form>
+
+                
+
+            </div>
+        </div>
+        <div class="col-sm-2"></div>
+    </div>
+</div>
+
+
+</body>
+
+
+<script>
+    $(document).ready(function(){
+        $('input:file').change(function(){
+            if ($(this).val()) {
+                $('button:submit').removeAttr('disabled');
+            }
+        });
+    });
+</script>
+
+
+
+</html>

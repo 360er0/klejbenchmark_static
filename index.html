@@ -1,0 +1,145 @@
+
+<html lang="en-US">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    
+    <title>KLEJ Benchmark</title>
+    
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-153145589-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-153145589-1');
+    </script>
+
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+    <!-- Custom resources -->
+    <link rel="stylesheet" type="text/css" href="static/style.css">
+    <link rel="icon" type="image/png" href="static/icon.png" sizes="32x32">
+
+</head>
+
+<body>
+
+
+<nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="./"><span class="glyphicon glyphicon-tint"></span> KLEJ</a>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="https://arxiv.org/abs/2005.00630" target="_blank"><span class="glyphicon glyphicon-file"></span> Paper</a></li>
+                <li><a href="https://github.com/allegro/klejbenchmark-baselines" target="_blank"><span class="glyphicon glyphicon-tasks"></span> Code</a></li>
+                <li><a href="tasks/"><span class="glyphicon glyphicon-duplicate"></span> Tasks</a></li>
+                <li><a href="leaderboard/"><span class="glyphicon glyphicon-sort-by-attributes-alt"></span> Leaderboard</a></li>
+                <li><a href="submit/"><span class="glyphicon glyphicon-cloud-upload"></span> Submit</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+
+
+<div class="container">
+    <div class="row">
+        <div class="col-sm-2"></div>
+        <div class="col-sm-8">
+            <div class="main-text">
+                <h1 class="center-text">KLEJ Benchmark</h1>
+                <hr>
+                <p>
+                    The KLEJ benchmark (<em>Kompleksowa Lista Ewaluacji Językowych</em>) is a set of nine
+                    evaluation tasks for the Polish language understanding.
+                </p>
+
+                <p>
+                    Key benchmark features:
+                </p>
+                <ul>
+                    <li>
+                        It contains a diverse set of tasks from different domains and with different objectives.
+                    </li>
+                    <li>
+                        Most tasks are created from existing datasets but we also release the new sentiment analysis
+                        dataset from an e-commerce domain.
+                    </li>
+                    <li>
+                        It includes tasks which have relatively small datasets and require
+                        extensive external knowledge to solve them. It promotes the usage of transfer learning
+                        instead of training separate models from scratch.
+                    </li>
+                </ul>
+
+                <p>
+                    Additionally, we provide automatic evaluation and release an online leaderboard to enable sharing your model results.
+                    The benchmark is model-agnostic, the only requirement is to prepare a submission file in a specified
+                    format.
+                </p>
+
+                <div class="center-text">
+                    <a href="https://arxiv.org/abs/2005.00630" target="_blank"><button type="button" class="btn btn-default btn-md">
+                        <span class="glyphicon glyphicon-file" aria-hidden="true"></span> Paper
+                    </button></a>
+
+                    <a href="https://github.com/allegro/klejbenchmark-baselines" target="_blank"><button type="button" class="btn btn-default btn-md">
+                        <span class="glyphicon glyphicon-tasks" aria-hidden="true"></span> Code
+                    </button></a>
+
+                    <a href="tasks/"><button type="button" class="btn btn-default btn-md">
+                        <span class="glyphicon glyphicon-duplicate" aria-hidden="true"></span> Tasks
+                    </button></a>
+
+                    <a href="leaderboard/"><button type="button" class="btn btn-default btn-md">
+                        <span class="glyphicon glyphicon-sort-by-attributes-alt" aria-hidden="true"></span> Leaderboard
+                    </button></a>
+
+                    <a href="submit/"><button type="button" class="btn btn-default btn-md">
+                        <span class="glyphicon glyphicon-cloud-upload" aria-hidden="true"></span> Submit
+                    </button></a>
+                </div>
+
+                <hr>
+
+                <p>
+                    KLEJ benchmark was created at Allegro and you can contact us at:
+                    <a href="mailto:klejbenchmark@allegro.pl">klejbenchmark@allegro.pl</a>
+                </p>
+                <div class="center-text"><a href="https://allegro.tech/"><img src="static/allegro_logo.svg"></a></div>
+            </div>
+        </div>
+        <div class="col-sm-2"></div>
+    </div>
+</div>
+
+
+</body>
+
+
+<script>
+    function disabledButton(e) {
+        alert("Not yet available");
+        e.preventDefault();
+    }
+</script>
+
+
+
+</html>
