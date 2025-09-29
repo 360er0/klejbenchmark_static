@@ -1,1 +1,3 @@
 # klejbenchmark_static
+
+test
