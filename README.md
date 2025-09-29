@@ -42,7 +42,7 @@ Key benchmark features:
 
 This static site is based on the original KLEJ Benchmark website. For the most up-to-date information and to submit results, please visit:
 - **Original site**: https://klejbenchmark.com/
-- **Paper**: https://arxiv.org/abs/2005.00630
+- **Paper**: https://aclanthology.org/2020.acl-main.111/
 - **Code**: https://github.com/allegro/klejbenchmark-baselines
 
 ## Contact
