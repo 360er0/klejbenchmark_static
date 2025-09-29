@@ -47,4 +47,4 @@ This static site is based on the original KLEJ Benchmark website. For the most u
 
 ## Contact
 
-KLEJ benchmark was created at Allegro. Contact: klejbenchmark@allegro.pl
+KLEJ benchmark was created at Allegro. Contact: piotr.cezary.rybak@gmail.com
